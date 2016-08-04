@@ -1,0 +1,46 @@
+.page {
+  @include make-container();
+  max-width: #{$width}px;
+}
+
+header {
+  @include make-row();
+  background: lighten($brand-success, 20%);
+  nav {
+    @include make-col();
+    @include make-col-span(12);
+  }
+}
+
+.information {
+  @include make-row();
+  background: $brand-primary;
+}
+
+.content {
+  @include make-col();
+  background: $brand-info;
+  @include breakpoint($xs) {
+    @include make-col-span(12);
+  }
+  @include breakpoint($md) {
+    @include make-col-span(8);
+  }
+  @include breakpoint($lg) {
+    @include make-col-span(9);
+  }
+}
+
+.sidebar {
+  @include make-col();
+  background: $brand-warning;
+  @include breakpoint($xs) {
+    @include make-col-span(12);
+  }
+  @include breakpoint($md) {
+    @include make-col-span(4);
+  }
+  @include breakpoint($lg) {
+    @include make-col-span(3);
+  }
+}

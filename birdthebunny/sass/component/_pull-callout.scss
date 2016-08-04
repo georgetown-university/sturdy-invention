@@ -1,0 +1,18 @@
+.caption {
+  max-width: 300px;
+  margin-bottom: 2rem;
+
+  &.left {
+    @include breakpoint($lg) {
+      @include pull-left();
+      margin-right: 2rem;
+    }
+  }
+  &.right {
+    @include breakpoint($lg) {
+      @include pull-right();
+      margin-left: 2rem;
+    }
+  }
+
+}

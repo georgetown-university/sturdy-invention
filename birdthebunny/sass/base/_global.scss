@@ -1,0 +1,7 @@
+a {
+  @include transition(color, 0.5s, ease);
+}
+
+img {
+  @include img-fluid();
+}

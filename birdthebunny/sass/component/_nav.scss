@@ -1,0 +1,12 @@
+header nav {
+  ul {
+    @extend .nav;
+    @extend .nav-inline;
+  }
+  li {
+    @extend .nav-item;
+  }
+  a {
+    @extend .nav-link;
+  }
+}
