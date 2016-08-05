@@ -1,3 +1,8 @@
+// do not use flexbox for the main site grid
+$enable-flex: false;
+
+
+
 .page {
   @include make-container();
   max-width: #{$width}px;
@@ -44,3 +49,9 @@ header {
     @include make-col-span(3);
   }
 }
+
+
+
+
+// enable flexbox again
+$enable-flex: true;
