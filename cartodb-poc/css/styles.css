@@ -1,0 +1,92 @@
+/* ***
+ * Base styles
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+a {
+  color: #822;
+}
+
+button {
+  background: #822;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px #ccc;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.75rem;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+}
+
+button:hover {
+  background: #a44;
+}
+
+main {
+  display: flex;
+}
+
+/* ***
+ * The map
+ */
+
+#map {
+  flex-basis: 75%;
+  height: 800px;
+}
+
+.cartodb-layer-selector-box,
+.cartodb-searchbox {
+  display: none !important;
+}
+
+/* ***
+ * Filter box
+ */
+
+#filters {
+  background-color: #dfdfdf;
+  border-right: 3px solid #fff;
+  flex-basis: 25%;
+  padding: 1rem;
+}
+
+fieldset {
+  margin: 1rem 0;
+}
+
+fieldset label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+fieldset button {
+  margin: 0.5rem 0;
+  padding: 0.25rem 1rem;
+}
+
+input[type=text] {
+  padding: 0.25rem 0.5rem;
+  width: 90%;
+}
+
+.only {
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.only:hover {
+  text-decoration: underline;
+}

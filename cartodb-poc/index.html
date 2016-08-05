@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CartoDB Proof of Concept</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <main>
+    <section id="filters">
+      <h1>Filters</h1>
+
+      <form>
+        <button id="reset-filters">Reset All Filters</button>
+
+        <fieldset id="filters--campus">
+          <label for="campus">Campus</label>
+          <p><input type="checkbox" name="campus" checked value="Main"> Main <a href="#" class="only">(only)</a></p>
+          <p><input type="checkbox" name="campus" checked value="Law">  Law  <a href="#" class="only">(only)</a></p>
+        </fieldset>
+
+        <fieldset id="filters--topics">
+          <label for="topics">Topics</label>
+          <p><input type="checkbox" name="topics" checked value="Public Health">  Public Health  <a href="#" class="only">(only)</a></p>
+          <p><input type="checkbox" name="topics" checked value="Public Policy">  Public Policy  <a href="#" class="only">(only)</a></p>
+          <p><input type="checkbox" name="topics" checked value="Education">      Education      <a href="#" class="only">(only)</a></p>
+          <p><input type="checkbox" name="topics" checked value="Social Justice"> Social Justice <a href="#" class="only">(only)</a></p>
+          <p><input type="checkbox" name="topics" checked value="Law">            Law            <a href="#" class="only">(only)</a></p>
+        </fieldset>
+
+        <fieldset id="filters--search">
+          <label for="search">Search keywords</label>
+          <p><input type="text" name="search" placeholder="keyword 1, keyword 2"></p>
+          <button id="filter--search-button">Search</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section id="map"></section>
+  </main>
+
+  <script src="js/map.js"></script>
+
+</body>
+</html>
